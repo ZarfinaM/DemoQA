@@ -1,12 +1,57 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DemoQa;
+using DemoQA;
+using DemoQA.FormsMenu;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
-namespace DemoQA.Alerts
+namespace DemoQa
 {
-    internal class Alert
+    [TestClass]
+    public class Alerts
     {
+        [TestInitialize]
+        public void Init()
+        {
+            TestArguments parameters = new TestArguments();
+
+            int a = int.Parse(parameters.browser);
+
+            Driver.Initialize(a);
+        }
+
+        [TestMethod]
+        public void TestCaseClickButtonToSeeAlert()
+        {
+            string subject = "",
+                     body = "";
+
+            TestArguments parameters = new TestArguments();
+            string URL = parameters.url;
+
+            OpenUrl.GoTo(URL);
+
+            string clickButtonToSeeAlertMessage = AlertsMenuTestCases.ClickButtonToSeeAlert();
+
+            if (!clickButtonToSeeAlertMessage.Contains("ERROR"))
+            {
+                subject = "Passed!!! " + subject;
+                body = "Test je prošao" + "\n" + clickButtonToSeeAlertMessage;
+            }
+            else
+            {
+                subject = "Failed!!" + subject;
+                body = clickButtonToSeeAlertMessage;
+            }
+
+        }
+
+        [TestCleanup]
+        public void Cleanup()
+
+        {
+            Driver.Close();
+
+        }
+
     }
 }

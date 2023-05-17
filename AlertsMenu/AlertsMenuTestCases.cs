@@ -1,10 +1,36 @@
-﻿namespace DemoQA
+﻿using DemoQA.AlertsMenu;
+using DemoQA.CommonStepsDemoQa;
+using DemoQA.ElementsMenu;
+
+namespace DemoQA
 {
-    internal class AlertsMenuTestCases
+    public class AlertsMenuTestCases
     {
-        internal static string ClickButtonToSeeAlert()
+        public static string ClickButtonToSeeAlert()
         {
-            throw new NotImplementedException();
+            string message = "";
+            string clickButtonToSeeAlertMessage = "";
+
+
+            try
+            {
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
+                AlertsMenuSteps.AlertsMenu();
+                AlertsMenuSteps.ItemAlerts();
+                AlertsMenuSteps.ButtonSeeAllert();
+
+            }
+
+            catch (Exception e)
+            {
+                message += "ERROR!" + e.Message;
+
+            }
+
+            message += clickButtonToSeeAlertMessage;
+            return message;
+
         }
     }
 }
