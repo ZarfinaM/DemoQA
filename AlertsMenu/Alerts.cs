@@ -42,8 +42,34 @@ namespace DemoQa
                 subject = "Failed!!" + subject;
                 body = clickButtonToSeeAlertMessage;
             }
+        }
+        [TestMethod]
+        public void TestCaseConfirmBoxAccept()
+        {
+            string subject = "",
+                     body = "";
+
+            TestArguments parameters = new TestArguments();
+            string URL = parameters.url;
+
+            OpenUrl.GoTo(URL);
+
+            string confirmBoxAcceptMessage = AlertsMenuTestCases.ConfirmBoxAccept();
+
+            if (!confirmBoxAcceptMessage.Contains("ERROR"))
+            {
+                subject = "Passed!!! " + subject;
+                body = "Test je prošao" + "\n" + confirmBoxAcceptMessage;
+            }
+            else
+            {
+                subject = "Failed!!" + subject;
+                body = confirmBoxAcceptMessage;
+            }
+
 
         }
+
 
         [TestCleanup]
         public void Cleanup()
@@ -55,3 +81,4 @@ namespace DemoQa
 
     }
 }
+    

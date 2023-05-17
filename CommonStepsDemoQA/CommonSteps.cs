@@ -51,5 +51,10 @@ namespace DemoQA.CommonStepsDemoQa
             uploadInput.SendKeys(@"C:\Users\Zarfina\OneDrive\Radna površina\Cvijet - Test.jpg");
 
         }
+
+        public static void AcceptAlarm()
+        {
+            Driver.Instance.SwitchTo().Alert().Accept();
+        }
     }
 }

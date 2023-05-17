@@ -19,6 +19,7 @@ namespace DemoQA
                 AlertsMenuSteps.AlertsMenu();
                 AlertsMenuSteps.ItemAlerts();
                 AlertsMenuSteps.ButtonSeeAllert();
+                CommonSteps.AcceptAlarm();
 
             }
 
@@ -29,6 +30,34 @@ namespace DemoQA
             }
 
             message += clickButtonToSeeAlertMessage;
+            return message;
+
+        }
+
+        public static string ConfirmBoxAccept()
+        {
+            string message = "";
+            string confirmBoxAcceptMessage = "";
+
+
+            try
+            {
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
+                AlertsMenuSteps.AlertsMenu();
+                AlertsMenuSteps.ItemAlerts();
+                AlertsMenuSteps.ButtonConfirmBox();
+                CommonSteps.AcceptAlarm();
+
+
+            }
+            catch (Exception e)
+            {
+                message += "ERROR!" + e.Message;
+
+            }
+
+            message += confirmBoxAcceptMessage;
             return message;
 
         }
