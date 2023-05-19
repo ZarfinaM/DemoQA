@@ -88,5 +88,34 @@ namespace DemoQA
             return message;
 
         }
+
+       public static string PromptBox()
+        {
+            string message = "";
+            string promptBoxMessage = "";
+
+
+            try
+            {
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
+                AlertsMenuSteps.AlertsMenu();
+                AlertsMenuSteps.ItemAlerts();
+                AlertsMenuSteps.PromptBoxButton();
+                CommonSteps.PromptBoxText();
+                
+                
+
+            }
+            catch (Exception e)
+            {
+                message += "ERROR!" + e.Message;
+
+            }
+
+            message += promptBoxMessage;
+            return message;
+
+        }
     }
 }

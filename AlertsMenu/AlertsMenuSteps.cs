@@ -31,6 +31,14 @@ namespace DemoQA.AlertsMenu
             buttonConfirmBox.Click();
         }
 
+        public static void PromptBoxButton()
+        {
+            var promptBoxButton = Driver.Instance.FindElement(By.CssSelector("#promtButton"));
+            promptBoxButton.Click();
+        }
+
+
+
 
         
         

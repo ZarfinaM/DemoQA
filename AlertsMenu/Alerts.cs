@@ -94,7 +94,32 @@ namespace DemoQa
 
 
             }
-        
+
+        [TestMethod]
+        public void TestCaseAlertsPromptBox()
+        {
+            string subject = "",
+                     body = "";
+
+            TestArguments parameters = new TestArguments();
+            string URL = parameters.url;
+
+            OpenUrl.GoTo(URL);
+
+            string promptBoxtMessage = AlertsMenuTestCases.PromptBox();
+
+            if (!promptBoxtMessage.Contains("ERROR"))
+            {
+                subject = "Passed!!! " + subject;
+                body = "Test je prošao" + "\n" + promptBoxtMessage;
+            }
+            else
+            {
+                subject = "Failed!!" + subject;
+                body = promptBoxtMessage;
+            }
+        }
+
 
 
         [TestCleanup]
