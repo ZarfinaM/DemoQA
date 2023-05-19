@@ -61,5 +61,32 @@ namespace DemoQA
             return message;
 
         }
+
+        public static string ConfirmBoxDismiss()
+        {
+            string message = "";
+            string confirmBoxDismissMessage = "";
+
+
+            try
+            {
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
+                AlertsMenuSteps.AlertsMenu();
+                AlertsMenuSteps.ItemAlerts();
+                AlertsMenuSteps.ButtonConfirmBox();
+                CommonSteps.DismissAlarm();
+
+            }
+            catch (Exception e)
+            {
+                message += "ERROR!" + e.Message;
+
+            }
+
+            message += confirmBoxDismissMessage;
+            return message;
+
+        }
     }
 }

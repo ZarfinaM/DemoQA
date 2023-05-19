@@ -66,9 +66,35 @@ namespace DemoQa
                 subject = "Failed!!" + subject;
                 body = confirmBoxAcceptMessage;
             }
-
-
         }
+
+            [TestMethod]
+            public void TestCaseConfirmBoxDismiss()
+            {
+                string subject = "",
+                         body = "";
+
+                TestArguments parameters = new TestArguments();
+                string URL = parameters.url;
+
+                OpenUrl.GoTo(URL);
+
+                string confirmBoxDismissMessage = AlertsMenuTestCases.ConfirmBoxDismiss();
+
+                if (!confirmBoxDismissMessage.Contains("ERROR"))
+                {
+                    subject = "Passed!!! " + subject;
+                    body = "Test je prošao" + "\n" + confirmBoxDismissMessage;
+                }
+                else
+                {
+                    subject = "Failed!!" + subject;
+                    body = confirmBoxDismissMessage;
+                }
+
+
+            }
+        
 
 
         [TestCleanup]
