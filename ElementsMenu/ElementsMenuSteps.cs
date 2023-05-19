@@ -11,24 +11,11 @@ using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using ServiceStack;
 
-namespace DemoQA.Elements
+namespace DemoQA.ElementsMenu
 {
     public static class ElementsMenuSteps
     {
-        public static void GoogleSearchDemoQa()
-        {
-            var googleSearch = Driver.Instance.FindElement(By.Name("q"));
-            googleSearch.Click();
-            googleSearch.SendKeys("demoqa");
-            googleSearch.SendKeys(Keys.Enter);
-        }
-
-        public static void DemoQa()
-        {
-            var demoQA = Driver.Instance.FindElement(By.CssSelector("#rso > div:nth-child(1) > div > div > div > div > div > div > div.yuRUbf > a > h3"));
-            demoQA.Click();
-        }
-
+      
         public static void ElementsMenu()
         {
             var elementsDemoQa = Driver.Instance.FindElement(By.CssSelector("#app > div > div > div.home-body > div > div:nth-child(1)"));
@@ -49,32 +36,14 @@ namespace DemoQA.Elements
             textBoxFullName.SendKeys("Zarfina Mulalic");
         }
 
-        public static void TextBoxEmail()
-        {
-            var textBoxEmail = Driver.Instance.FindElement(By.CssSelector("#userEmail"));
-            textBoxEmail.Click();
-            textBoxEmail.SendKeys("zarfina.mulalic@gmail.com");
-        }
-
-        public static void TextBoxCurrentAddress()
-        {
-            var textBoxCurrentAddress = Driver.Instance.FindElement(By.XPath("//*[@id=\"currentAddress\"]"));
-            textBoxCurrentAddress.Click();
-            textBoxCurrentAddress.SendKeys("Sarajevo");
-        }
-
-        public static void TextBoxPermanentAddress()
+                public static void TextBoxPermanentAddress()
         {
             var textBoxPermanentAddress = Driver.Instance.FindElement(By.CssSelector("#permanentAddress"));
             textBoxPermanentAddress.Click();
             textBoxPermanentAddress.SendKeys("Sarajevo");
         }
 
-        public static void ElementsSubmitButton()
-        {
-            var elementsSubmitButton = Driver.Instance.FindElement(By.CssSelector("#submit"));
-            elementsSubmitButton.Click();
-        }
+       
 
         public static void CheckBox()
         {
@@ -169,16 +138,10 @@ namespace DemoQA.Elements
             uploadChooseFileButton.Click();
         }
 
-        public static void UploadChooseImage()
-        {
-            var uploadInput = Driver.Instance.FindElement(By.ClassName("form-control-file"));
-            uploadInput.SendKeys(@"C:\Users\Zarfina\OneDrive\Radna površina\Cvijet - Test.jpg");
-  
-
-
+        
 
         }
 
 
     }
-}
+

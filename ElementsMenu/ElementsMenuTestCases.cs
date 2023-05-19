@@ -1,4 +1,5 @@
-﻿using DemoQA.Elements;
+﻿using DemoQA.CommonStepsDemoQa;
+using DemoQA.ElementsMenu;
 using OpenQA.Selenium;
 
 namespace DemoQa
@@ -13,15 +14,15 @@ namespace DemoQa
 
             try
             {
-                ElementsMenuSteps.GoogleSearchDemoQa();
-                ElementsMenuSteps.DemoQa();
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.TextBox();
                 ElementsMenuSteps.TextBoxFullName();
-                ElementsMenuSteps.TextBoxEmail();
-                ElementsMenuSteps.TextBoxCurrentAddress();
+                CommonSteps.Email();
+                CommonSteps.CurrentAddress();
                 ElementsMenuSteps.TextBoxPermanentAddress();
-                ElementsMenuSteps.ElementsSubmitButton();
+                CommonSteps.SubmitButton();
 
             }
 
@@ -45,8 +46,8 @@ namespace DemoQa
             try
             {
 
-                ElementsMenuSteps.GoogleSearchDemoQa();
-                ElementsMenuSteps.DemoQa();
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.RadioButton();
                 ElementsMenuSteps.RadioButtonYes();
@@ -72,8 +73,8 @@ namespace DemoQa
 
             try
             {
-                ElementsMenuSteps.GoogleSearchDemoQa();
-                ElementsMenuSteps.DemoQa();
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.CheckBox();
                 ElementsMenuSteps.CheckBoxHomeDropDownMenu();
@@ -100,8 +101,8 @@ namespace DemoQa
 
             try
             {
-                ElementsMenuSteps.GoogleSearchDemoQa();
-                ElementsMenuSteps.DemoQa();
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.WebTables();
                 ElementsMenuSteps.WebTablesFirstNameColumn();
@@ -127,13 +128,13 @@ namespace DemoQa
 
             try
             {
-                ElementsMenuSteps.GoogleSearchDemoQa();
-                ElementsMenuSteps.DemoQa();
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.WebTables();
                 ElementsMenuSteps.WebTablesAldenEdit();
                 ElementsMenuSteps.WebTablesAldenChangeSalary20000();
-                ElementsMenuSteps.ElementsSubmitButton();
+                CommonSteps.SubmitButton();
 
             }
             catch (Exception e)
@@ -154,8 +155,8 @@ namespace DemoQa
 
             try
             {
-                ElementsMenuSteps.GoogleSearchDemoQa();
-                ElementsMenuSteps.DemoQa();
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.Buttons();
                 ElementsMenuSteps.ButtonDoubleClick();
@@ -180,8 +181,8 @@ namespace DemoQa
 
             try
             {
-                ElementsMenuSteps.GoogleSearchDemoQa();
-                ElementsMenuSteps.DemoQa();
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.Buttons();
                 ElementsMenuSteps.ButtonRightClick();
@@ -206,12 +207,11 @@ namespace DemoQa
 
             try
             {
-                ElementsMenuSteps.GoogleSearchDemoQa();
-                ElementsMenuSteps.DemoQa();
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.UploadAndDownload();
-                ElementsMenuSteps.UploadChooseFileButton();
-                ElementsMenuSteps.UploadChooseImage();
+                CommonSteps.UploadChooseImage();
 
             }
             catch (Exception e)

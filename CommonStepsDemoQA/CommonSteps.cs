@@ -34,7 +34,7 @@ namespace DemoQA.CommonStepsDemoQa
 
         public static void CurrentAddress()
         {
-            var currentAddress = Driver.Instance.FindElement(By.XPath("//*[@id=\"currentAddress\"]"));
+            var currentAddress = Driver.Instance.FindElement(By.CssSelector("#currentAddress"));
             currentAddress.Click();
             currentAddress.SendKeys("Sarajevo");
         }
@@ -55,6 +55,11 @@ namespace DemoQA.CommonStepsDemoQa
         public static void AcceptAlarm()
         {
             Driver.Instance.SwitchTo().Alert().Accept();
+        }
+
+        public static void DismissAlarm()
+        {
+            Driver.Instance.SwitchTo().Alert().Dismiss();
         }
     }
 }

@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using DemoQa;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 
-namespace DemoQA.Forms
+namespace DemoQA.FormsMenu
 {
     public static class FormsMenuSteps
     {
@@ -74,9 +75,9 @@ namespace DemoQA.Forms
 
         public static void PracticeFormSubjectsMathematics()
         {
-            var practiceFormSubject = Driver.Instance.FindElement(By.XPath("//*[@id=\"subjectsContainer\"]"));
+            var practiceFormSubject = Driver.Instance.FindElement(By.XPath("//div[@class='subjects-auto-complete__control css-yk16xz-control']"));
             practiceFormSubject.Click();
-            practiceFormSubject.SendKeys("Mathematics");
+            practiceFormSubject.SendKeys("Math");
         }
 
         public static void PracticeFormHobbiesReading()
@@ -87,35 +88,29 @@ namespace DemoQA.Forms
 
         public static void PracticeFormState()
         {
-            // var practiceFormState = Driver.Instance.FindElement(By.XPath("//*[@id=\"stateCity-wrapper\"]/div[2]"));
-            // practiceFormState.Click();
-
-            var practiceFormState = Driver.Instance.FindElement(By.XPath("//*[@id='stateCity-wrapper']/div[2]"));
-            practiceFormState.SendKeys(Keys.Enter); 
-
-            var stateHaryana = Driver.Instance.FindElement(By.XPath("//*[@id='state']/div/div[1]/div[1]"));
-            stateHaryana.Click();
-
-
-
+            var practiceFormState = Driver.Instance.FindElement(By.XPath("//div[@id='state']"));
+            practiceFormState.Click();
 
         }
 
         public static void PracticeFormStateHaryana()
         {
-            var stateHaryana = Driver.Instance.FindElement(By.XPath("//*[@id=\"state\"]/div/div[1]/div[1]"));
+           // var stateHaryana = Driver.Instance.FindElement(By.XPath("//div[@id='state']//div[contains(@class,'css-1wy0on6')]"));
+           // stateHaryana.Click();
+
+            var stateHaryana = Driver.Instance.FindElement(By.CssSelector("body > div:nth-child(7) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > form:nth-child(2) > div:nth-child(10) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)"));
             stateHaryana.Click();
         }
 
         public static void PracticeFormCity()
         {
-            var practiceFormCity = Driver.Instance.FindElement(By.CssSelector("#state > div > div.css-1hwfws3 > div.css-1uccc91-singleValue"));
+            var practiceFormCity = Driver.Instance.FindElement(By.CssSelector("body > div:nth-child(6) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > form:nth-child(2) > div:nth-child(10) > div:nth-child(3)"));
             practiceFormCity.Click();
         }
 
         public static void PracticeFormCityKarnal()
         {
-            var cityKarnal = Driver.Instance.FindElement(By.CssSelector("#city > div > div.css-1hwfws3 > div.css-1g6gooi"));
+            var cityKarnal = Driver.Instance.FindElement(By.XPath("//div[contains(text(),'Karnal')]"));
             cityKarnal.Click();
         }
     }

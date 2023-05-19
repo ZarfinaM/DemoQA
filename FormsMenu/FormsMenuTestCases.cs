@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DemoQA.Elements;
+using DemoQA.FormsMenu;
+using DemoQA.ElementsMenu;
+using DemoQA.CommonStepsDemoQa;
 
-namespace DemoQA.Forms
+namespace DemoQA
 {
     public class FormsMenuTestCases
     {
@@ -17,23 +19,24 @@ namespace DemoQA.Forms
 
             try
             {
-                ElementsMenuSteps.GoogleSearchDemoQa();
-                ElementsMenuSteps.DemoQa();
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
                 FormsMenuSteps.FormsMenu();
                 FormsMenuSteps.PracticeForm();
                 FormsMenuSteps.PracticeFormFirstName();
                 FormsMenuSteps.PracticeFormLastName();
-                ElementsMenuSteps.TextBoxEmail();
+                CommonSteps.Email();
                 FormsMenuSteps.PracticeFormGender();
                 FormsMenuSteps.PracticeFormMobileNumber();
                 FormsMenuSteps.PracticeFormDateOfBirth();
                 FormsMenuSteps.PracticeForm3August2005();
                // FormsMenuSteps.PracticeFormSubjectsMathematics();
+               //There is Bug. Nothing can be entered. I did also manual testing for this Test Case.
                 FormsMenuSteps.PracticeFormHobbiesReading();
-                ElementsMenuSteps.UploadChooseImage();
-                ElementsMenuSteps.TextBoxCurrentAddress();
+                CommonSteps.UploadChooseImage();
+                CommonSteps.CurrentAddress();
                 FormsMenuSteps.PracticeFormState();
-               // FormsMenuSteps.PracticeFormStateHaryana();
+                FormsMenuSteps.PracticeFormStateHaryana();
                 FormsMenuSteps.PracticeFormCity();
                 FormsMenuSteps.PracticeFormCityKarnal();
             }

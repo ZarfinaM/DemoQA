@@ -1,13 +1,13 @@
 ﻿using DemoQa;
 using DemoQA;
-using DemoQA.Forms;
+using DemoQA.FormsMenu;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace DemoQa
 {
     [TestClass]
-    public class Form
+    public class Forms
     {
 
         [TestInitialize]
