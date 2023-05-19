@@ -61,5 +61,13 @@ namespace DemoQA.CommonStepsDemoQa
         {
             Driver.Instance.SwitchTo().Alert().Dismiss();
         }
+
+        public static void PromptBoxText()
+        {
+         IAlert promptAlert = Driver.Instance.SwitchTo().Alert();
+            promptAlert.SendKeys("QaTest");
+            promptAlert.Accept();      
+
+        }
     }
 }
