@@ -21,7 +21,7 @@ namespace DemoQa
 
         [TestMethod]
 
-        public void TestCaseDragAndDrop()
+        public void TestCaseDragAndDropSimple()
         {
             string subject = "",
                      body = "";
