@@ -47,8 +47,8 @@ namespace DemoQA.CommonStepsDemoQa
 
         public static void UploadChooseImage()
         {
-            var uploadInput = Driver.Instance.FindElement(By.ClassName("form-control-file"));
-            uploadInput.SendKeys(@"C:\Users\Zarfina\OneDrive\Radna površina\Cvijet - Test.jpg");
+            var uploadInput = Driver.Instance.FindElement(By.CssSelector("#uploadFile"));
+            uploadInput.SendKeys(@"C:\Users\zary_\OneDrive\Radna površina\Cvijet - Test.jpg");
 
         }
 
