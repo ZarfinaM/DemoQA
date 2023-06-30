@@ -23,14 +23,13 @@ namespace DemoQA.WidgetsMenu
 
         public static void Slider()
         {
-            var slider = Driver.Instance.FindElement(By.XPath("//span[normalize-space()='Slider']"));
+            var slider = Driver.Instance.FindElement(By.XPath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/ul[1]/li[4]/span[1]"));
             slider.Click();
-
         }
 
         public static void SliderElement()
         {
-            var sliderElement = Driver.Instance.FindElement(By.CssSelector("#sliderContainer > div.col-9 > span > input"));
+            var sliderElement = Driver.Instance.FindElement(By.CssSelector("#sliderContainer"));
             sliderElement.Click();
         
         

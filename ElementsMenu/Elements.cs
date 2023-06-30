@@ -223,6 +223,33 @@ namespace DemoQa
             }
         }
 
+        [TestMethod]
+
+        public void TestCaseDownload()
+
+        {
+            string subject = "",
+                         body = "";
+
+            TestArguments parameters = new TestArguments();
+            string URL = parameters.url;
+
+            OpenUrl.GoTo(URL);
+
+            string downloadMessage = ElementsMenuTestCases.Download();
+
+            if (!downloadMessage.Contains("ERROR"))
+            {
+                subject = "Passed!!! " + subject;
+                body = "Test je prošao" + "\n" + downloadMessage;
+            }
+            else
+            {
+                subject = "Failed!!" + subject;
+                body = downloadMessage;
+            }
+        }
+
 
 
         [TestCleanup]

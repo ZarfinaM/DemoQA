@@ -128,7 +128,7 @@ namespace DemoQA.ElementsMenu
 
         public static void UploadAndDownload()
         {
-            var uploadandDownload = Driver.Instance.FindElement(By.CssSelector("li#item-7.btn.btn-light"));
+            var uploadandDownload = Driver.Instance.FindElement(By.CssSelector("div[class='element-list collapse show'] li[id='item-7'] span[class='text']"));
             uploadandDownload.Click();
         }
 
@@ -138,9 +138,35 @@ namespace DemoQA.ElementsMenu
             uploadChooseFileButton.Click();
         }
 
-        
+        public static void DownloadButton()
+        {
+            var downloadButton = Driver.Instance.FindElement(By.CssSelector("#downloadButton"));
+            downloadButton.Click();
+           
+        }
+        public static void IsDownloadCompleted()
+        {
+            
+         //   string downloadDirectory = "C:\\Downloads";
+           // string expectedFileName = "example.txt";
+            //string downloadedFilePath = System.IO.Path.Combine(downloadDirectory, expectedFileName);
+
+            //return System.IO.File.Exists(downloadedFilePath);
+
+
+           
+
+            string downloadDirectory = "C:Users_zary_Downloads";
+            string fileName = "sampleFile.jpeg";
+            string downloadedFilePath = Path.Combine(downloadDirectory, fileName);
+
+            bool fileExists = File.Exists(downloadedFilePath);
 
         }
+
+
+
+    }
 
 
     }

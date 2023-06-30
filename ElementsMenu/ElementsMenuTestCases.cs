@@ -223,5 +223,31 @@ namespace DemoQa
             message += uploadImageMessage;
             return message;
         }
+
+        public static string Download()
+        {
+            string message = "";
+            string downloadMessage = "";
+
+
+            try
+            {
+                CommonSteps.GoogleSearchDemoQa();
+                CommonSteps.DemoQa();
+                ElementsMenuSteps.ElementsMenu();
+                ElementsMenuSteps.UploadAndDownload();
+                ElementsMenuSteps.DownloadButton();
+                ElementsMenuSteps.IsDownloadCompleted();
+
+            }
+            catch (Exception e)
+            {
+                message += "ERROR!" + e.Message;
+
+            }
+
+            message += downloadMessage;
+            return message;
+        }
     }
 }
