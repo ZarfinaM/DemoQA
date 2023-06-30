@@ -22,7 +22,6 @@ namespace DemoQA.AlertsMenu
         {
             var buttonSeeALert = Driver.Instance.FindElement(By.CssSelector("#alertButton"));
             buttonSeeALert.Click();
-            Driver.Instance.SwitchTo().Alert().Accept();
         }
 
         public static void ButtonConfirmBox()
