@@ -145,22 +145,13 @@ namespace DemoQA.ElementsMenu
            
         }
         public static void IsDownloadCompleted()
-        {
-            
-         //   string downloadDirectory = "C:\\Downloads";
-           // string expectedFileName = "example.txt";
-            //string downloadedFilePath = System.IO.Path.Combine(downloadDirectory, expectedFileName);
+        {     
+            string downloadDirectory = @"C:\Users\zary_\Downloads";
+            string downloadedFilePath = Path.Combine(downloadDirectory, "sampleFile.jpeg");
+            bool isFileDownloaded = File.Exists(downloadedFilePath);
 
-            //return System.IO.File.Exists(downloadedFilePath);
+            Assert.IsTrue(isFileDownloaded, "File download failed or the file does not exist.");
 
-
-           
-
-            string downloadDirectory = "C:Users_zary_Downloads";
-            string fileName = "sampleFile.jpeg";
-            string downloadedFilePath = Path.Combine(downloadDirectory, fileName);
-
-            bool fileExists = File.Exists(downloadedFilePath);
 
         }
 
