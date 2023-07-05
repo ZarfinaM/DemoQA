@@ -10,20 +10,7 @@ namespace DemoQA.CommonStepsDemoQa
 
 {
     public static class CommonSteps
-    {
-        public static void GoogleSearchDemoQa()
-        {
-            var googleSearch = Driver.Instance.FindElement(By.Name("q"));
-            googleSearch.Click();
-            googleSearch.SendKeys("demoqa");
-            googleSearch.SendKeys(Keys.Enter);
-        }
-
-        public static void DemoQa()
-        {
-            var demoQA = Driver.Instance.FindElement(By.CssSelector("#rso > div:nth-child(1) > div > div > div > div > div > div > div.yuRUbf > a > h3"));
-            demoQA.Click();
-        }
+    {      
 
         public static void Email()
         {
@@ -41,7 +28,7 @@ namespace DemoQA.CommonStepsDemoQa
 
         public static void SubmitButton()
         {
-            var submitButton = Driver.Instance.FindElement(By.CssSelector("#submit"));
+            var submitButton = Driver.Instance.FindElement(By.XPath("//button[@id='submit']"));
             submitButton.Click();
         }
 

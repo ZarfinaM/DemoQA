@@ -19,8 +19,7 @@ namespace DemoQA
 
             try
             {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+              
                 FormsMenuSteps.FormsMenu();
                 FormsMenuSteps.PracticeForm();
                 FormsMenuSteps.PracticeFormFirstName();
@@ -35,10 +34,11 @@ namespace DemoQA
                 FormsMenuSteps.PracticeFormHobbiesReading();
                 CommonSteps.UploadChooseImage();
                 CommonSteps.CurrentAddress();
-                FormsMenuSteps.PracticeFormState();
-                FormsMenuSteps.PracticeFormStateHaryana();
-                FormsMenuSteps.PracticeFormCity();
-                FormsMenuSteps.PracticeFormCityKarnal();
+                // FormsMenuSteps.PracticeFormState();
+                // FormsMenuSteps.PracticeFormStateHaryana();
+                //  FormsMenuSteps.PracticeFormCity();
+                //  FormsMenuSteps.PracticeFormCityKarnal();
+                CommonSteps.SubmitButton();
             }
 
             catch (Exception e)

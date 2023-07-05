@@ -13,9 +13,7 @@ namespace DemoQA
 
 
             try
-            {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+            {              
                 AlertsMenuSteps.AlertsMenu();
                 AlertsMenuSteps.ItemAlerts();
                 AlertsMenuSteps.ButtonSeeAllert();
@@ -41,9 +39,7 @@ namespace DemoQA
 
 
             try
-            {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+            {              
                 AlertsMenuSteps.AlertsMenu();
                 AlertsMenuSteps.ItemAlerts();
                 AlertsMenuSteps.ButtonConfirmBox();
@@ -69,9 +65,7 @@ namespace DemoQA
 
 
             try
-            {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+            {             
                 AlertsMenuSteps.AlertsMenu();
                 AlertsMenuSteps.ItemAlerts();
                 AlertsMenuSteps.ButtonConfirmBox();
@@ -96,9 +90,7 @@ namespace DemoQA
 
 
             try
-            {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+            {              
                 AlertsMenuSteps.AlertsMenu();
                 AlertsMenuSteps.ItemAlerts();
                 AlertsMenuSteps.PromptBoxButton();

@@ -77,7 +77,7 @@ namespace DemoQA.FormsMenu
         {
             var practiceFormSubject = Driver.Instance.FindElement(By.XPath("//div[@class='subjects-auto-complete__control css-yk16xz-control']"));
             practiceFormSubject.Click();
-            practiceFormSubject.SendKeys("Math");
+            practiceFormSubject.SendKeys("English");
         }
 
         public static void PracticeFormHobbiesReading()
@@ -88,7 +88,7 @@ namespace DemoQA.FormsMenu
 
         public static void PracticeFormState()
         {
-            var practiceFormState = Driver.Instance.FindElement(By.XPath("//div[@id='state']"));
+            var practiceFormState = Driver.Instance.FindElement(By.CssSelector("div.body-height:nth-child(2) div.container.playgound-body div.row div.col-12.mt-4.col-md-6:nth-child(2) div.practice-form-wrapper:nth-child(2) form:nth-child(2) div.mt-2.row:nth-child(10) > div.col-md-4.col-sm-12:nth-child(2)"));
             practiceFormState.Click();
 
         }
@@ -98,7 +98,7 @@ namespace DemoQA.FormsMenu
            // var stateHaryana = Driver.Instance.FindElement(By.XPath("//div[@id='state']//div[contains(@class,'css-1wy0on6')]"));
            // stateHaryana.Click();
 
-            var stateHaryana = Driver.Instance.FindElement(By.CssSelector("body > div:nth-child(7) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > form:nth-child(2) > div:nth-child(10) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)"));
+            var stateHaryana = Driver.Instance.FindElement(By.CssSelector("div.body-height:nth-child(2) div.container.playgound-body div.row div.col-12.mt-4.col-md-6:nth-child(2) div.practice-form-wrapper:nth-child(2) div.mt-2.row:nth-child(10) div.col-md-4.col-sm-12:nth-child(2) div.css-2b097c-container div.css-yk16xz-control div.css-1hwfws3 > div.css-1uccc91-singleValue"));
             stateHaryana.Click();
         }
 

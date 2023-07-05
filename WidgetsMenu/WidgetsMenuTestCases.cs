@@ -14,8 +14,7 @@ namespace DemoQa
 
             try
             {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+               
                 WidgetsMenuSteps.WidgetsMenu();
                 WidgetsMenuSteps.Slider();
                 WidgetsMenuSteps.SliderElement();

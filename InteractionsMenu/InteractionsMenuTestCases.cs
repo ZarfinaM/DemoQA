@@ -22,8 +22,7 @@ namespace DemoQA
 
             try
             {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+               
                 InteractionsMenuSteps.InteractionsMenu();
                 InteractionsMenuSteps.Droppable();
                 InteractionsMenuSteps.DragAndDropSimple();

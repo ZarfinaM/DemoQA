@@ -14,8 +14,7 @@ namespace DemoQa
 
             try
             {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+               
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.TextBox();
                 ElementsMenuSteps.TextBoxFullName();
@@ -46,8 +45,6 @@ namespace DemoQa
             try
             {
 
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.RadioButton();
                 ElementsMenuSteps.RadioButtonYes();
@@ -73,8 +70,7 @@ namespace DemoQa
 
             try
             {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+                
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.CheckBox();
                 ElementsMenuSteps.CheckBoxHomeDropDownMenu();
@@ -101,8 +97,7 @@ namespace DemoQa
 
             try
             {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+               
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.WebTables();
                 ElementsMenuSteps.WebTablesFirstNameColumn();
@@ -128,8 +123,7 @@ namespace DemoQa
 
             try
             {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+                
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.WebTables();
                 ElementsMenuSteps.WebTablesAldenEdit();
@@ -155,8 +149,7 @@ namespace DemoQa
 
             try
             {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+              
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.Buttons();
                 ElementsMenuSteps.ButtonDoubleClick();
@@ -181,8 +174,7 @@ namespace DemoQa
 
             try
             {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+               
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.Buttons();
                 ElementsMenuSteps.ButtonRightClick();
@@ -207,8 +199,7 @@ namespace DemoQa
 
             try
             {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+               
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.UploadAndDownload();
                 CommonSteps.UploadChooseImage();
@@ -232,8 +223,7 @@ namespace DemoQa
 
             try
             {
-                CommonSteps.GoogleSearchDemoQa();
-                CommonSteps.DemoQa();
+                
                 ElementsMenuSteps.ElementsMenu();
                 ElementsMenuSteps.UploadAndDownload();
                 ElementsMenuSteps.DownloadButton();
