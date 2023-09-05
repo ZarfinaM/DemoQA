@@ -28,13 +28,13 @@ namespace DemoQA.CommonStepsDemoQa
 
         public static void SubmitButton()
         {
-            var submitButton = Driver.Instance.FindElement(By.XPath("//button[@id='submit']"));
+            var submitButton = Driver.Instance.FindElement(By.Id("submit"));
             submitButton.Click();
         }
 
         public static void UploadChooseImage()
         {
-            var uploadInput = Driver.Instance.FindElement(By.XPath("//*[@id=\"uploadPicture\"]"));
+            var uploadInput = Driver.Instance.FindElement(By.XPath("//input[@id='uploadFile']"));
             uploadInput.SendKeys(@"C:\Users\zary_\OneDrive\Radna površina\Cvijet - Test.jpg");
 
         }
